@@ -1,8 +1,16 @@
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 import { Search, Bell, Plus, Settings, LogOut, User } from "lucide-react";
-import sowticsLogo from "figma:asset/f9b4253eae349d1738eb6db18a09cb8dd81f8db2.png";
+// Replaced figma asset import with local file to avoid missing dependency
+import sowticsLogo from "../assets/logo.png";
 
 interface NavigationProps {
   currentPage: string;
@@ -13,7 +21,7 @@ export function Navigation({ currentPage, onPageChange }: NavigationProps) {
   const navItems = [
     { id: "home", label: "Home" },
     { id: "servicios", label: "Servicios" },
-    { id: "quienes-somos", label: "Quienes somos" }
+    { id: "quienes-somos", label: "Quienes somos" },
   ];
 
   return (
@@ -25,11 +33,7 @@ export function Navigation({ currentPage, onPageChange }: NavigationProps) {
             onClick={() => onPageChange("home")}
             className="flex items-center hover:opacity-80 transition-opacity"
           >
-            <img 
-              src={sowticsLogo} 
-              alt="SOWTIC" 
-              className="h-10 w-auto"
-            />
+            <img src={sowticsLogo} alt="SOWTIC" className="h-10 w-auto" />
           </button>
         </div>
 

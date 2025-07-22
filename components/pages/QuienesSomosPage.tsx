@@ -8,50 +8,62 @@ export function QuienesSomosPage() {
     {
       icon: Target,
       title: "Misión",
-      description: "Transformar procesos empresariales a través de soluciones tecnológicas innovadoras que generen impacto real en la operación, eficiencia y estrategia de nuestros clientes."
+      description:
+        "Transformar procesos empresariales a través de soluciones tecnológicas innovadoras que generen impacto real en la operación, eficiencia y estrategia de nuestros clientes.",
     },
     {
       icon: Lightbulb,
       title: "Visión",
-      description: "Ser la empresa líder en transformación digital, reconocida por crear soluciones que no solo cumplen con las expectativas, sino que redefinen el futuro de los negocios."
+      description:
+        "Ser la empresa líder en transformación digital, reconocida por crear soluciones que no solo cumplen con las expectativas, sino que redefinen el futuro de los negocios.",
     },
     {
       icon: Users,
       title: "Valores",
-      description: "Innovación constante, colaboración estrecha con nuestros clientes, excelencia técnica y compromiso con resultados tangibles que impulsen el crecimiento sostenible."
+      description:
+        "Innovación constante, colaboración estrecha con nuestros clientes, excelencia técnica y compromiso con resultados tangibles que impulsen el crecimiento sostenible.",
     },
     {
       icon: Award,
       title: "Compromiso",
-      description: "Garantizar que cada solución que desarrollamos se integre perfectamente con la operación existente y genere valor medible desde el primer día de implementación."
-    }
+      description:
+        "Garantizar que cada solución que desarrollamos se integre perfectamente con la operación existente y genere valor medible desde el primer día de implementación.",
+    },
   ];
 
   const team = [
     {
       name: "Ana García",
       role: "CEO & Fundadora",
-      description: "15 años de experiencia liderando transformaciones digitales en empresas Fortune 500.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
+      description:
+        "15 años de experiencia liderando transformaciones digitales en empresas Fortune 500.",
+      image:
+        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
     },
     {
       name: "Carlos Rodríguez",
       role: "CTO",
-      description: "Experto en arquitecturas de software escalables y soluciones de inteligencia artificial.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
+      description:
+        "Experto en arquitecturas de software escalables y soluciones de inteligencia artificial.",
+      image:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
     },
     {
       name: "María López",
       role: "Head of Security",
-      description: "Especialista en ciberseguridad con certificaciones internacionales en ethical hacking.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face"
+      description:
+        "Especialista en ciberseguridad con certificaciones internacionales en ethical hacking.",
+      image:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
     },
     {
       name: "Diego Martínez",
       role: "Innovation Director",
-      description: "Líder en investigación y desarrollo de tecnologías emergentes como AR/VR e IA.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face"
-    }
+      description:
+        "Líder en investigación y desarrollo de tecnologías emergentes como AR/VR e IA.",
+      image:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
+    },
   ];
 
   return (
@@ -61,14 +73,15 @@ export function QuienesSomosPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10" />
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl opacity-30" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl opacity-30" />
-        
+
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
               Quiénes Somos
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Somos un equipo de expertos apasionados por transformar ideas en soluciones tecnológicas que impulsan el futuro de los negocios
+              Somos un equipo de expertos apasionados por transformar ideas en
+              soluciones tecnológicas que impulsan el futuro de los negocios
             </p>
           </div>
         </div>
@@ -80,9 +93,11 @@ export function QuienesSomosPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl mb-6">Nuestra Historia</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              SOWTIC nació de la visión de crear un puente entre la tecnología avanzada y las necesidades reales de las empresas. 
-              Fundada en 2020, hemos crecido desde un pequeño equipo de desarrolladores hasta convertirnos en una consultora 
-              tecnológica integral que ha transformado más de 200 empresas en América Latina.
+              SOWTIC nació de la visión de crear un puente entre la tecnología
+              avanzada y las necesidades reales de las empresas. Fundada en
+              2020, hemos crecido desde un pequeño equipo de desarrolladores
+              hasta convertirnos en una consultora tecnológica integral que ha
+              transformado más de 200 empresas en América Latina.
             </p>
           </div>
 
@@ -119,17 +134,15 @@ export function QuienesSomosPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl mb-6">Nuestro Equipo</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Profesionales especializados con años de experiencia en sus respectivas áreas, 
-              unidos por la pasión de crear soluciones que marquen la diferencia
+              Profesionales especializados con años de experiencia en sus
+              respectivas áreas, unidos por la pasión de crear soluciones que
+              marquen la diferencia
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {team.map((member, index) => (
-              <div
-                key={member.name}
-                className="group text-center"
-              >
+              <div key={member.name} className="group text-center">
                 <div className="relative mb-6 mx-auto w-48 h-48">
                   <img
                     src={member.image}

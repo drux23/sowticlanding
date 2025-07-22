@@ -15,22 +15,22 @@ export function HomePage({ onNavigate }: HomePageProps) {
     <>
       {/* Hero Section with Image */}
       <Hero onNavigate={onNavigate} />
-      
+
       {/* Servicios principales - Primera sección después del Hero */}
       <Features />
-      
+
       {/* Team Carousel - Entre secciones B y D */}
       <TeamCarousel />
-      
+
       {/* Business Process Timeline */}
       <BusinessProcess />
-      
+
       {/* Client Logos Section */}
       <ClientLogos />
-      
+
       {/* Testimonials Section */}
       <Testimonials />
-      
+
       {/* Call to Action Section */}
       <CallToAction />
     </>
