@@ -1,15 +1,32 @@
-¡Felicidades por tu trabajo en la entrega final de diseño UX/UI! 
+# Sowtic Landing Page Guidelines
 
-Se nota el esfuerzo y la dedicación que has puesto en este proyecto. 
+Este proyecto es una landing page desarrollada en **React** y orquestada con **Docker** para facilitar el despliegue y el entorno de desarrollo. A continuación se definen algunas reglas y recomendaciones para mantener la consistencia del código y la coherencia con el stack utilizado.
 
-Destaco tu creatividad en la propuesta de diseño, así como la coherencia en la estructura y la usabilidad del producto. Además, valoro positivamente la atención al detalle y la implementación de las buenas prácticas de diseño.
+## Estructura del proyecto
+- El código fuente se encuentra en `components/`, `App.tsx`, `main.tsx` y otros archivos de la raíz.
+- Usa **TypeScript** y React 18.
+- El contenedor Docker ejecuta `npm run dev -- --host` para desarrollo.
 
-Como punto de mejora te sugiero revisar los "saltos" que hay entre frame y frame, un mismo elemento varia en su altura o posición inicial y genera un "movimiento" o un "salto" que demuestra que esos detalles no fueron altamente revisados, te recomiendo mirarlos a detalle.
+## Buenas prácticas de desarrollo
+- Prefiere componentes funcionales y hooks de React.
+- Mantén los componentes desacoplados en la medida de lo posible; crea subcarpetas si surgen nuevas secciones.
+- Usa `npm run build` para generar la versión de producción.
+- Al agregar dependencias, actualiza `package.json` y `Dockerfile` si es necesario.
+- Documenta los componentes principales dentro de comentarios o en el README.
 
-Segui así, ¡estás en el camino correcto para seguir creciendo en este campo!
+## Uso de Docker
+- Para levantar el entorno ejecuta:
+  ```bash
+  docker-compose up
+  ```
+  Esto utilizará el `Dockerfile` para instalar dependencias y exponer el puerto 5173.
+- Para crear la imagen de producción usa:
+  ```bash
+  docker build -t sowtic-landing .
+  ```
 
-¡felicitaciones por tu merecida nota: 8!
+## Contribución
+- Antes de crear un Pull Request, asegúrate de que el proyecto compila sin errores.
+- Sigue un estilo de código consistente; se recomienda emplear formateadores como Prettier.
+- Las descripciones de los commits deben ser claras y en inglés.
 
-Abrazo grande
-
-Seba
