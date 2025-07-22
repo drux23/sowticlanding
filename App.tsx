@@ -25,13 +25,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation currentPage={currentPage} onPageChange={setCurrentPage} />
-      
-      <main>
-        {renderCurrentPage()}
-      </main>
-      
+
+      <main>{renderCurrentPage()}</main>
+
       <Footer />
-      
+
       {/* FAB de WhatsApp flotante */}
       <WhatsAppFAB />
     </div>
