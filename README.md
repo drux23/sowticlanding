@@ -12,11 +12,45 @@ Sowtic ayuda a empresas y organizaciones a diseñar, construir y escalar product
 
 ## 🛠️ Tecnologías utilizadas
 
-Este proyecto utiliza herramientas y lenguajes típicos del desarrollo web profesional. Próximamente se detallará el stack completo.
+El prototipo fue generado en **Figma** y posteriormente exportado a código. La interfaz está desarrollada con las siguientes herramientas:
+
+- **React** + **TypeScript** para la lógica y estructura de la aplicación.
+- **Tailwind CSS** para la composición de estilos utilitarios.
+- Componentes de **shadcn/ui** basados en **Radix UI**.
+- Iconos proporcionados por **lucide-react**.
+
+### Dependencias principales
+
+Este repositorio declara, entre otras, las siguientes dependencias en `package.json`:
+
+- `react` y `react-dom`
+- Paquetes de `@radix-ui` para los distintos componentes de interfaz
+- `tailwindcss`, `postcss` y `autoprefixer`
+- `clsx`, `tailwind-merge` y `class-variance-authority`
+- Utilidades como `react-hook-form`, `react-day-picker`, `embla-carousel-react`, `lucide-react` y `sonner`
 
 ## 📦 Instalación
 
-La documentación técnica sobre cómo instalar y ejecutar este proyecto será agregada en futuras versiones.
+Este proyecto utiliza un entorno **React** con **Vite**. Todas las dependencias necesarias se encuentran especificadas en `package.json` e incluyen React, TypeScript, Tailwind CSS y los paquetes de **Radix UI** utilizados por los componentes de `shadcn/ui`.
+
+Si desea ejecutarlo de forma local sin contenedores:
+
+```bash
+npm install
+npm run dev
+```
+
+### Ejecución con Docker
+
+1. Construya la imagen:
+   ```bash
+   docker build -t sowtic-landing .
+   ```
+2. Ejecute el contenedor resultante:
+   ```bash
+   docker run --rm -p 4173:4173 sowtic-landing
+   ```
+3. Abra `http://localhost:4173` en su navegador para ver la aplicación.
 
 ## 💻 Interfaz
 
