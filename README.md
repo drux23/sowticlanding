@@ -12,11 +12,25 @@ Sowtic ayuda a empresas y organizaciones a diseñar, construir y escalar product
 
 ## 🛠️ Tecnologías utilizadas
 
-Este proyecto utiliza herramientas y lenguajes típicos del desarrollo web profesional. Próximamente se detallará el stack completo.
+- **React 18** y **TypeScript**
+- **Vite** como entorno de desarrollo y build
+- **Radix UI** y **lucide-react** para componentes e íconos
+- Librerías de soporte como **react-hook-form**, **recharts** y **embla-carousel-react**
 
-## 📦 Instalación
+## 📦 Instalación con Docker
 
-La documentación técnica sobre cómo instalar y ejecutar este proyecto será agregada en futuras versiones.
+1. Construir la imagen:
+   ```bash
+   docker build -t sowtic-landing .
+   ```
+2. Levantar el entorno de desarrollo:
+   ```bash
+   docker run -p 5173:5173 sowtic-landing
+   ```
+   También puedes usar `docker-compose`:
+   ```bash
+   docker-compose up
+   ```
 
 ## 💻 Interfaz
 
